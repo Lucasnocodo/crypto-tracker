@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__wonderwhy-er-desktop-commander__list_directory",
+      "mcp__wonderwhy-er-desktop-commander__search_files",
+      "mcp__wonderwhy-er-desktop-commander__read_file",
+      "mcp__wonderwhy-er-desktop-commander__search_code",
+      "mcp__wonderwhy-er-desktop-commander__write_file",
+      "mcp__wonderwhy-er-desktop-commander__edit_block",
+      "Bash(python:*)",
+      "Bash(pip3 install:*)",
+      "Bash(curl:*)",
+      "Bash(bg)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(npm start)",
+      "Bash(time curl:*)",
+      "Bash(pkill:*)",
+      "mcp__martin-songzy-coin-mcp-server__getTokenPrice",
+      "Bash(/dev/null)",
+      "mcp__exa__web_search_exa",
+      "Bash(npm run build:*)",
+      "mcp__wonderwhy-er-desktop-commander__create_directory",
+      "Bash(source:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

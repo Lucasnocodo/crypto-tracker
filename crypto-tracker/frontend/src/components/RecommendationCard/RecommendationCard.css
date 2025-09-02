@@ -1,0 +1,82 @@
+/* Recommendation Cards */
+.recommendation-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark theme styles */
+.dark-theme .recommendation-card {
+  background: rgba(26, 26, 46, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-theme .recommendation-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Recommendation Text Enhancement */
+.recommendation-symbol {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .recommendation-symbol {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .recommendation-symbol {
+  color: #1e3c72;
+}
+
+.recommendation-action {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-buy {
+  color: #10b981 !important;
+  text-shadow: 0 1px 2px rgba(16, 185, 129, 0.3);
+}
+
+.recommendation-sell {
+  color: #ef4444 !important;
+  text-shadow: 0 1px 2px rgba(239, 68, 68, 0.3);
+}
+
+.recommendation-hold {
+  color: #f59e0b !important;
+  text-shadow: 0 1px 2px rgba(245, 158, 11, 0.3);
+}
+
+.recommendation-meta {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+.dark-theme .recommendation-meta {
+  color: #d1d5db;
+}
+
+.light-theme .recommendation-meta {
+  color: #6b7280;
+}

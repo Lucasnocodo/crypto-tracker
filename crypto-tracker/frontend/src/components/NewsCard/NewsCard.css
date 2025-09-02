@@ -1,0 +1,89 @@
+/* NewsCard specific styles */
+.news-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 320px;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+}
+
+.news-card .ant-card-body {
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Light theme styles */
+.light-theme .news-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.light-theme .news-card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+  border-color: rgba(30, 60, 114, 0.3) !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Dark theme styles */
+.dark-theme .news-card {
+  background: rgba(26, 26, 46, 0.95) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.dark-theme .news-card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(64, 169, 255, 0.4) !important;
+  background: rgba(26, 26, 46, 0.98) !important;
+}
+
+/* Animation for news cards */
+@keyframes newsCardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.news-card {
+  animation: newsCardSlideIn 0.6s ease-out;
+}
+
+.news-card:nth-child(1) { animation-delay: 0.1s; }
+.news-card:nth-child(2) { animation-delay: 0.2s; }
+.news-card:nth-child(3) { animation-delay: 0.3s; }
+.news-card:nth-child(4) { animation-delay: 0.4s; }
+.news-card:nth-child(5) { animation-delay: 0.5s; }
+.news-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .news-card {
+    margin-bottom: 16px;
+    min-height: 280px;
+  }
+  
+  .news-card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-card {
+    min-height: 260px;
+  }
+}

@@ -1,0 +1,37 @@
+.update-indicator {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1890ff;
+  z-index: 1001;
+  animation: fadeInRight 0.3s ease-out;
+}
+
+.update-indicator.dark {
+  background: rgba(26, 26, 46, 0.95);
+  border: 1px solid rgba(64, 169, 255, 0.3);
+}
+
+.update-indicator.light {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(24, 144, 255, 0.3);
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

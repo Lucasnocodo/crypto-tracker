@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/Users/chenyuda/agents/crypto-tracker/backend/**)",
+      "Read(/Users/chenyuda/agents/crypto-tracker/backend/**)",
+      "Read(/Users/chenyuda/agents/crypto-tracker/backend/**)",
+      "Read(/Users/chenyuda/agents/crypto-tracker/**)",
+      "WebSearch",
+      "WebFetch(domain:hackmd.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,60 @@
+/* Header specific styles */
+.header-title {
+  font-weight: 800 !important;
+  font-size: 28px !important;
+  margin: 0 !important;
+  line-height: 64px !important;
+}
+
+/* Light theme header title */
+.light-theme .header-title {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Dark theme header title */
+.dark-theme .header-title {
+  background: linear-gradient(135deg, #40a9ff 0%, #69c0ff 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Network status indicator */
+.network-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.network-status-indicator.connected {
+  background: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+  border: 1px solid rgba(82, 196, 26, 0.2);
+}
+
+.network-status-indicator.disconnected {
+  background: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f;
+  border: 1px solid rgba(255, 77, 79, 0.2);
+}
+
+.network-status-indicator.connecting {
+  background: rgba(250, 173, 20, 0.1);
+  color: #faad14;
+  border: 1px solid rgba(250, 173, 20, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 22px !important;
+  }
+}
